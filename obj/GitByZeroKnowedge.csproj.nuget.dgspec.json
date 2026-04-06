@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj": {}
+    "c:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj": {
+    "c:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj",
+        "projectUniqueName": "c:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj",
         "projectName": "GitByZeroKnowedge",
-        "projectPath": "C:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj",
+        "projectPath": "c:\\Projects\\GitByZeroKnowedge\\GitByZeroKnowedge.csproj",
         "packagesPath": "C:\\Users\\maxON\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\GitByZeroKnowedge\\obj\\",
+        "outputPath": "c:\\Projects\\GitByZeroKnowedge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
