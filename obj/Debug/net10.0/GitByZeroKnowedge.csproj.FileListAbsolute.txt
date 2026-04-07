@@ -1,0 +1,15 @@
+c:\Projects\GitByZeroKnowedge\bin\Debug\net10.0\GitByZeroKnowedge.exe
+c:\Projects\GitByZeroKnowedge\bin\Debug\net10.0\GitByZeroKnowedge.deps.json
+c:\Projects\GitByZeroKnowedge\bin\Debug\net10.0\GitByZeroKnowedge.runtimeconfig.json
+c:\Projects\GitByZeroKnowedge\bin\Debug\net10.0\GitByZeroKnowedge.dll
+c:\Projects\GitByZeroKnowedge\bin\Debug\net10.0\GitByZeroKnowedge.pdb
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.GeneratedMSBuildEditorConfig.editorconfig
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.AssemblyInfoInputs.cache
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.AssemblyInfo.cs
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.csproj.CoreCompileInputs.cache
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.sourcelink.json
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.dll
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\refint\GitByZeroKnowedge.dll
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.pdb
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\GitByZeroKnowedge.genruntimeconfig.cache
+c:\Projects\GitByZeroKnowedge\obj\Debug\net10.0\ref\GitByZeroKnowedge.dll

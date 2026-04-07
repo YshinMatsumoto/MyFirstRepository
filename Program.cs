@@ -12,7 +12,6 @@ using System.Text;
 using System.Text.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.VisualBasic;
 
 // Объявление переменных
 string apiUrl = "https://api.hh.ru/vacancies?text=C%23+developer";
@@ -23,48 +22,49 @@ string userInput = string.Empty;
 
 await Task.Delay(10); // Делает метод асинхронным
 
-try {
+try
+{
 
     async Task<string> FetchVacanciesAsync(HttpClient client, string url)
-{
-    // запрос к API и возврат строки
-    string responseBody = await client.GetStringAsync(apiUrl);
-        return responseBody;
-}
-
-static void SaveToFile(string path, string content)
-{
-    // сохранение в файл
-     File.WriteAllText("jobs.json", content);
-            string jsonString = File.ReadAllText("jobs.json");
-            Console.WriteLine("JSON сохранён в jobs.json");
-}
-
-static void PrintVacancyNames(string json)
-{
-    using (JsonDocument document = JsonDocument.Parse(json))
     {
-        JsonElement root = document.RootElement;
-        JsonElement items = root.GetProperty("items");
+        // запрос к API и возврат строки
+        string responseBody = await client.GetStringAsync(apiUrl);
+        return responseBody;
+    }
 
-        int counter = 1;
-        foreach (JsonElement vacancy in items.EnumerateArray())
+    static void SaveToFile(string path, string content)
+    {
+        // сохранение в файл
+        File.WriteAllText("jobs.json", content);
+        string jsonString = File.ReadAllText("jobs.json");
+        Console.WriteLine("JSON сохранён в jobs.json");
+    }
+
+    static void PrintVacancyNames(string json)
+    {
+        using (JsonDocument document = JsonDocument.Parse(json))
         {
-            // Вот здесь вставляем твой блок
-            if (vacancy.TryGetProperty("name", out JsonElement nameElement))
+            JsonElement root = document.RootElement;
+            JsonElement items = root.GetProperty("items");
+
+            int counter = 1;
+            foreach (JsonElement vacancy in items.EnumerateArray())
             {
-                string name = nameElement.GetString();
-                Console.WriteLine($"{counter}. {name}");
-                counter++;
-            }
-            else
-            {
-                Console.WriteLine($"{counter}. (имя не указано)");
-                counter++;
+                // Вот здесь вставляем твой блок
+                if (vacancy.TryGetProperty("name", out JsonElement nameElement))
+                {
+                    string name = nameElement.GetString();
+                    Console.WriteLine($"{counter}. {name}");
+                    counter++;
+                }
+                else
+                {
+                    Console.WriteLine($"{counter}. (имя не указано)");
+                    counter++;
+                }
             }
         }
     }
-}
 
     Console.WriteLine("Добро пожаловать в поисковик вакансий на C# developer!");
     Console.WriteLine("=====================================");
@@ -78,24 +78,25 @@ static void PrintVacancyNames(string json)
 
         switch (userInput)
         {
-            case "1": 
-            string json = await FetchVacanciesAsync(client, apiUrl);
-            SaveToFile("jobs.json", json);
-            PrintVacancyNames(json);
-            break;
+            case "1":
+                string json = await FetchVacanciesAsync(client, apiUrl);
+                SaveToFile("jobs.json", json);
+                PrintVacancyNames(json);
+                break;
 
             case "0":
-            Console.WriteLine("=====================================");
-            Console.WriteLine("Спасибо что воспользовались нашей программой");
-            break;
+                Console.WriteLine("=====================================");
+                Console.WriteLine("Спасибо что воспользовались нашей программой");
+                break;
 
             default:
-            Console.WriteLine("Такой комманды не существует!");
-            break;
+                Console.WriteLine("Такой комманды не существует!");
+                break;
         }
-        
+
     }
-} catch (Exception ex)
+}
+catch (Exception ex)
 {
     Console.WriteLine($"Ошибка! {ex.Message}");
 }
